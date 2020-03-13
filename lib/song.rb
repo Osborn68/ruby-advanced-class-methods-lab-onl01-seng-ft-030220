@@ -9,5 +9,14 @@ class Song
   def save
     self.class.all << self
   end
-  def self.create
+  def self.create(song)
+    @@all << song
+  end
+  
+  
+
+
+
+
+
 end
