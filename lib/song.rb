@@ -1,4 +1,5 @@
 class Song
+  
   attr_accessor :name, :artist_name
   @@all = []
 
@@ -47,7 +48,9 @@ class Song
     def self.alphabetical
       @@all.sort_by{ |x| x.name }
     end
-    
+    binding.pry 
+    def self.new_from_filename
+      
      
    end 
  
