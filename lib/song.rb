@@ -23,11 +23,15 @@ class Song
  
   def Song.create_by_name(name)
     song = self.new
-    
+    song.name = name
+    song
   end
   
-   def Song.find_by_name(song_name)
-     self.all.find{|song| song_name == name}
+   def Song.find_by_name(name)
+     @@all.each{|song| song.name == name}
+     return song
+   end 
+ end
      
   
   
