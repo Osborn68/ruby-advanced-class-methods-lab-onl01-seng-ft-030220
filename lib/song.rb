@@ -23,6 +23,9 @@ class Song
     @name = @@all
   end
   
+   def Song.find_by_name(song_name)
+     @@all
+     
   
   
 
