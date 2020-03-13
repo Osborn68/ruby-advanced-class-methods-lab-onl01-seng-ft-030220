@@ -49,10 +49,10 @@ class Song
       @@all.sort_by{ |x| x.name }
     end
    
-    def self.new_from_filename
-      
-     
-   end 
+    def self.new_from_filename(name)
+         end 
+         
+         
  end
  
      
