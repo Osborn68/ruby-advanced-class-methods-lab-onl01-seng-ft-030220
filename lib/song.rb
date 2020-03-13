@@ -19,6 +19,7 @@ class Song
   
   def self.create_by_name
     @name = @@all
+  end
   
 
 
