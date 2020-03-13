@@ -19,13 +19,11 @@ class Song
     song = self.new
     song.name = name
     song
-    
-    
   end
   
   def Song.create_by_name(name)
-    name = self.create_by_name
-    @name = @@all
+    song = self.new
+    
   end
   
    def Song.find_by_name(song_name)
