@@ -18,7 +18,8 @@ class Song
     @name = self.name
   end
   
-  def Song.create_by_name
+  def Song.create_by_name(name)
+    name = self.create_by_name
     @name = @@all
   end
   
