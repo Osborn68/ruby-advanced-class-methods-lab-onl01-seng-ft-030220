@@ -50,9 +50,21 @@ class Song
     end
    
     def self.new_from_filename(name)
-         song_array + name.split("-")
-         
+         song_array = name.split("-")
+         song_array[1] = song_array[1].chomp(".mp3")
+         song = self.new
+         song.name = song_array[1]
+         song.artist_name = song_array(0)
+         song
          end 
+      
+    def self.create_from_filename(name)
+      result = self.new_from_filename
+      song = self.create
+      song.name = result.name
+      song.artist_name = result.artist_name
+      song
+    end
          
     def self.destroy_all
       @@all = []
@@ -60,7 +72,7 @@ class Song
  end
  
      
-  binding.pry
+
   
  
 
